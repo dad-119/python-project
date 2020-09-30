@@ -1,4 +1,5 @@
-import csv
+# importing 
+	import csv
 	import math
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -9,7 +10,7 @@ import csv
 	
 
 	
-
+#cost function
 	def compute_cost(X, y, theta):
 	    J = 0
 	    A = np.subtract(np.dot(X, theta), y)
@@ -18,7 +19,7 @@ import csv
 	
 
 	
-
+#gradient descent
 	def gradient_descent(X, y, theta, alpha, epsilon, flag):
 	    J_hist = []
 	    all_thetas0 = []
@@ -54,7 +55,7 @@ import csv
 	        J_hist), bt_val
 	
 
-	
+#main function
 
 	def main(x_training, y_training):
 	    x_training = x_training.T
