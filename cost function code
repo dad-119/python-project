@@ -13,8 +13,11 @@
 #cost function
 	def compute_cost(X, y, theta):
 	    J = 0
+	    k=1
 	    A = np.subtract(np.dot(X, theta), y)
 	    J = (0.5) * (np.dot(A.T, A))
+	    if k==0:
+	        return
 	    return J[0, 0]
 	
 
